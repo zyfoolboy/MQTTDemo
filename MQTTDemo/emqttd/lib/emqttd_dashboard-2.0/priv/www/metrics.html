@@ -1,0 +1,134 @@
+<div style="margin-bottom: 22px;">
+<div class="btn-group" id="metrics_recent">
+    <template v-if="minutes == 60">
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-success disabled">The recent 1 hour</button>
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-gray" @click="day();">The recent 1 day</button>
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-gray" @click="week();">In recent 7 days</button>
+    </template>
+    <template v-if="minutes == 60 * 24">
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-gray" @click="hour();">The recent 1 hour</button>
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-success disabled">The recent 1 day</button>
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-gray" @click="week();">In recent 7 days</button>
+    </template>
+    <template v-if="minutes == 60 * 24 * 7">
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-gray" @click="hour();">The recent 1 hour</button>
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-gray" @click="day();">The recent 1 day</button>
+    <button style="border:1px solid #ddd;" type="button" class="btn btn-success disabled">In recent 7 days</button>
+    </template>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Bytes</h3>
+            </div>
+            <div class="panel-body">
+                
+                <div id="bytes_chart">
+                   <svg style="height:300px"> </svg>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Messages</h3>
+            </div>
+            <div class="panel-body row">
+                
+                <div class="col-sm-6">
+                <div id="messages_chart">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="messages_chart_2">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="messages_chart_3">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="messages_chart_4">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Packets</h3>
+            </div>
+            <div class="panel-body row">
+                
+                <div class="col-sm-6">
+                <div id="packets_chart">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_2">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_3">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_4">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_5">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_6">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_7">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_8">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_9">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                <div class="col-sm-6">
+                <div id="packets_chart_10">
+                   <svg style="height:300px"> </svg>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

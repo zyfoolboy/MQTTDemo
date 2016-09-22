@@ -1,0 +1,10 @@
+{application,epgsql,
+             [{description,"PostgreSQL Client"},
+              {vsn,"3.2.0"},
+              {modules, ['epgsql','epgsql_binary','epgsql_errcodes','epgsql_fdatetime','epgsql_idatetime','epgsql_sock','epgsql_types','epgsql_wire','epgsqla','epgsqli','ewkb']},
+              {registered,[]},
+              {applications,[kernel,stdlib,ssl]},
+              {env,[]},
+              {included_applications,[]},
+              {licenses,["BSD"]},
+              {links,[{"Github","https://github.com/epgsql/epgsql"}]}]}.

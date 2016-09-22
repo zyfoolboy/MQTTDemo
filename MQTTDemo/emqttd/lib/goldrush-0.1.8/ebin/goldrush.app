@@ -1,0 +1,8 @@
+{application,goldrush,
+             [{description,"Erlang event stream processor"},
+              {vsn,"0.1.8"},
+              {registered,[]},
+              {applications,[kernel,stdlib,syntax_tools,compiler]},
+              {mod,{gr_app,[]}},
+              {env,[]},
+              {modules, ['glc','glc_code','glc_lib','glc_ops','gr_app','gr_context','gr_counter','gr_counter_sup','gr_manager','gr_manager_sup','gr_param','gr_param_sup','gr_sup','gre']}]}.
