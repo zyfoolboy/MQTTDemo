@@ -3,5 +3,9 @@
 
 想完整的使用MQTT协议需要搭建一个服务器和完成iOS客户端代码。
 ##服务器搭建
-本次使用[emqttd](https://github.com/emqtt/emqttd)作为服务器，EMQ文档[地址](http://emqtt.com/docs/v2/index.html)，服务器搭建可以在该文档中查看。配置完成之后，在浏览器输入http://127.0.0.1:18083界面如图：![]()
+本次使用[emqttd](https://github.com/emqtt/emqttd)作为服务器，EMQ文档[地址](http://emqtt.com/docs/v2/index.html)，服务器搭建可以在该文档中查看。配置完成之后，在浏览器输入http://127.0.0.1:18083 界面如图：
+![](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/server.png)
+至此，服务器已经搭建完成，可以开始iOS代码了。
+##iOS代码
+
 
