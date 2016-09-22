@@ -10,7 +10,7 @@
 在 iOS 客户端可以使用[MQTTClient](https://github.com/ckrey/MQTT-Client-Framework)库，支持 CocoaPod 导入。导入框架之后，第一步先初始化：
 ```
 MQTTCFSocketTransport *transport = [[MQTTCFSocketTransport alloc] init];
-transport.host = @"192.168.1.117";//MQTT服务器的地址
+transport.host = @"192.168.1.117";//MQTT服务器的地址,自己电脑的IP地址
 transport.port = 1883;//设置MQTT服务器的端口
 self.mySession = [[MQTTSession alloc] init];//初始化MQTTSession对象
 self.mySession.transport = transport;//给mySession对象设置基本信息
