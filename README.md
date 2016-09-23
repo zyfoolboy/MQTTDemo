@@ -74,5 +74,6 @@ NSData *data = [self.messageText.text dataUsingEncoding:NSUTF8StringEncoding];
 效果如下：
 <p align="center"><img width="300" src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorsend.png"> <img width="300" src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicereceive.PNG"></p>
 
+一个基于 MQTT 协议的简单的即时通讯功能已经完成。 
 
 
