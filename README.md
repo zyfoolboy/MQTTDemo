@@ -7,7 +7,7 @@
 ![](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/server.png)
 至此，服务器已经搭建完成，可以开始 iOS 代码了。
 ##iOS 代码
-在 iOS 客户端可以使用[MQTTClient](https://github.com/ckrey/MQTT-Client-Framework)库，支持 CocoaPod 导入。导入框架之后，第一步先初始化：
+在 iOS 客户端可以使用 [MQTTClient](https://github.com/ckrey/MQTT-Client-Framework) 库，支持 CocoaPod 导入。导入框架之后，第一步先初始化：
 ```
 MQTTCFSocketTransport *transport = [[MQTTCFSocketTransport alloc] init];
 transport.host = @"192.168.1.117";//MQTT服务器的地址,自己电脑的IP地址
