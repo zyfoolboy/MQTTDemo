@@ -59,4 +59,19 @@ NSData *data = [self.messageText.text dataUsingEncoding:NSUTF8StringEncoding];
                 retain:NO
                 qos:MQTTQosLevelAtLeastOnce];
 ``` 
+代码完成，可以测试一下，分别用真机和模拟器来测试收发消息。
+
+   | 订阅 Topic | 发送 Topic
+---|-----------|-----------
+真机| Simulators | Device
+模拟器| Device | Simulators
+
+真机订阅 Simulators Topic 向 Device Topic 发送消息
+模拟器订阅 Device Topic 向Simulators Topic 发送消息
+效果如下：
+![真机发送消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicesend.PNG)
+![模拟器接收消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorreceive.png)
+![模拟器发送消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorsend.png)
+![真机接收消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicereceive.PNG)
+
 
