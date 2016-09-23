@@ -67,8 +67,14 @@ NSData *data = [self.messageText.text dataUsingEncoding:NSUTF8StringEncoding];
 模拟器| Device | Simulators
 
 真机订阅 Simulators Topic 向 Device Topic 发送消息
+效果如下：
+<p align="center"><img src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicesend.PNG"></p>
+<p align="center"><img src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorreceive.png"></p>
+
 模拟器订阅 Device Topic 向Simulators Topic 发送消息
 效果如下：
+<p align="center"><img src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorsend.png"></p>
+<p align="center"><img src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicereceive.PNG"></p>
 ![真机发送消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicesend.PNG)
 ![模拟器接收消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorreceive.png)
 ![模拟器发送消息](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorsend.png)
