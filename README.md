@@ -3,7 +3,7 @@
 
 想完整的使用 MQTT 协议需要搭建一个服务器和完成 iOS 客户端代码。
 ##服务器搭建
-本次使用 [emqttd](https://github.com/emqtt/emqttd) 作为服务器，EMQ 文档[地址](http://emqtt.com/docs/v2/index.html)，服务器搭建可以在该文档中查看。配置完成之后，在浏览器输入http://127.0.0.1:18083 用户名密码默认为 admin/public 界面如图：
+本次使用 [emqttd](https://github.com/emqtt/emqttd) 作为服务器，EMQ 文档[地址](http://emqtt.com/docs/v2/index.html)，服务器搭建可以在该文档中查看。配置完成之后，在浏览器输入 http://127.0.0.1:18083 用户名密码默认为 admin/public 界面如图：
 ![](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/server.png)
 至此，服务器已经搭建完成，可以开始 iOS 代码了。
 ##iOS 代码
@@ -70,7 +70,7 @@ NSData *data = [self.messageText.text dataUsingEncoding:NSUTF8StringEncoding];
 效果如下：
 <p align="center"><img width="300" src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicesend.PNG"> <img width="300" src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorreceive.png"></p>
 
-模拟器订阅 Device Topic 向Simulators Topic 发送消息
+模拟器订阅 Device Topic 向 Simulators Topic 发送消息
 效果如下：
 <p align="center"><img width="300" src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Simulatorsend.png"> <img width="300" src="https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/Devicereceive.PNG"></p>
 
