@@ -2,11 +2,11 @@
 >有关 MQTT 协议的概念这里不做过多描述，网上有大把的文章。本文主要讨论 MQTT 协议在 iOS 中的应用。
 
 想完整的使用 MQTT 协议需要搭建一个服务器和完成 iOS 客户端代码。
-##服务器搭建
+## 服务器搭建
 本次使用 [emqttd](https://github.com/emqtt/emqttd) 作为服务器，EMQ 文档[地址](http://emqtt.com/docs/v2/index.html)，服务器搭建可以在该文档中查看。配置完成之后，在浏览器输入 http://127.0.0.1:18083 用户名密码默认为 admin/public 界面如图：
 ![](https://github.com/zyfoolboy/MQTTDemo/blob/master/MQTTDemo/img/server.png)
 至此，服务器已经搭建完成，可以开始 iOS 代码了。
-##iOS 代码
+## iOS 代码
 在 iOS 客户端可以使用 [MQTTClient](https://github.com/ckrey/MQTT-Client-Framework) 库，支持 CocoaPod 导入。导入框架之后，第一步先初始化：
 ```
 MQTTCFSocketTransport *transport = [[MQTTCFSocketTransport alloc] init];
